@@ -52,3 +52,61 @@ p {
     margin: 5%;
     color: #777777 
 }
+
+@media screen and (max-width: 940px){
+  body {
+    margin: 3%;
+    background-color: #111111;
+}
+    
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: red;
+    transition: 1s;
+}
+
+h1:active {
+    color: blue;
+    transition: 1s;
+}
+
+h2 {
+    font-size: 2em;
+    color: azure;
+    text-align: right;
+}
+
+.links {
+    margin: 5%;
+    color: #AAAAAA;
+    font-size: 1.2em;
+}
+
+li {
+    margin: 1em 0 0 0;
+}
+
+a:hover {
+    font-size: 2em;
+    transition: 2s;
+    color: greenyellow;
+}
+
+a:active {
+    font-size: 2em;
+    transition: 2s;
+    color: aqua;
+}
+
+p {
+    margin: 5%;
+    color: #777777 
+}
+
+}
