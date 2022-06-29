@@ -64,6 +64,7 @@ h1 {
     text-align: center;
     color: white;
     font-weight: bold;
+    margin: 5% 0;
 }
 
 h1:hover {
@@ -80,6 +81,7 @@ h2 {
     font-size: 2em;
     color: azure;
     text-align: right;
+    margin: 10% 0;
 }
 
 .links {
@@ -89,7 +91,7 @@ h2 {
 }
 
 li {
-    margin: 1em 0 0 0;
+    margin: 1.5em 0 0 0;
 }
 
 a:hover {
@@ -105,7 +107,7 @@ a:active {
 }
 
 p {
-    margin: 5%;
+    margin: 15% 0;
     color: #777777 
 }
 
