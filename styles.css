@@ -53,6 +53,10 @@ p {
     color: #777777 
 }
 
+footer {
+    text-align: center;
+}
+
 @media screen and (max-width: 940px){
   body {
     margin: 3%;
