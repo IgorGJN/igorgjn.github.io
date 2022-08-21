@@ -30,6 +30,7 @@
     top: 0;
     left: 0;
     box-shadow: 0 1px var(--menu-destaque);
+    z-index: 2;
 }
 
 .cabecalho__titulo {
@@ -74,4 +75,62 @@
 
 .rodape {
     margin-bottom: 65px;
+}
+
+@media screen and (min-width: 760px) {
+
+    .menu {
+        top: 7vh;
+        bottom: auto;
+        display: grid;
+        height: 93vh;
+    }
+
+    .menu__link {
+        width: 70px;
+    }
+
+    .conteudo {
+        margin: 60px 0 0 60px;
+    }
+    
+    .rodape {
+        margin-left: 60px;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+
+    .menu {
+        top: 7vh;
+        bottom: auto;
+        display: grid;
+        height: 93vh;
+    }
+
+    .menu__link {
+        width: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__link-icon {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .menu__link-text {
+        font-size: 1rem;
+        padding: 0 0 0 0.5rem;
+    }
+
+    .conteudo {
+        margin: 12vh 0 0 15vh;
+    }
+    
+    .rodape {
+        margin-left: 100px;
+    }
+    
 }
