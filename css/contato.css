@@ -1,0 +1,15 @@
+:root {
+    --font-redessociais: 'redes-sociais'
+}
+
+@font-face {
+    font-family: 'redes-sociais';
+    src: url(redes.ttf);
+}
+
+p {
+    font-size: 10rem;
+    color: white;
+    font-family: var(--font-redessociais);
+}
+

@@ -25,7 +25,8 @@
 
 .cabecalho {
     background-color: var(--background-menu);
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
     width: 100%;
     top: 0;
     left: 0;
@@ -44,14 +45,18 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: var(--background-menu);
+}
+
+.menu__lateral {
     display: flex;
 }
+
 
 .menu__link {
     width: 20%;
     text-align: center;
     padding: 0.5rem;
-    background-color: var(--background-menu);
 }
 
 .menu__link-icon {
@@ -70,67 +75,62 @@
 }
 
 .conteudo {
-    margin-top: 60px;
+
 }
 
-.rodape {
-    margin-bottom: 65px;
-}
 
 @media screen and (min-width: 760px) {
 
+    .corpo__pagina {
+        display: flex;
+
+    } 
+
     .menu {
-        top: 7vh;
+        position: relative;
         bottom: auto;
-        display: grid;
-        height: 93vh;
+        left: auto;
+        width: 10%;
+    } 
+
+    .menu__lateral {
+        position: sticky;
+        top:6vh;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
     }
 
-    .menu__link {
-        width: 70px;
-    }
+    .section {
+        height: 94vh;        
 
-    .conteudo {
-        margin: 60px 0 0 60px;
     }
     
-    .rodape {
-        margin-left: 60px;
-    }
+
     
 }
 
 @media screen and (min-width: 960px) {
 
     .menu {
-        top: 7vh;
-        bottom: auto;
-        display: grid;
-        height: 93vh;
+        width: 18%;
     }
 
     .menu__link {
-        width: 150px;
         display: flex;
         align-items: center;
-    }
+        padding: 2rem 0 0 1rem;
+    } 
 
     .menu__link-icon {
         font-size: 1.5rem;
-        padding: 0;
     }
 
     .menu__link-text {
         font-size: 1rem;
-        padding: 0 0 0 0.5rem;
+        padding-left: 0.5rem;
+
     }
 
-    .conteudo {
-        margin: 12vh 0 0 15vh;
-    }
-    
-    .rodape {
-        margin-left: 100px;
-    }
-    
+
 }
