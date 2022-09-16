@@ -1,0 +1,26 @@
+.conteudo {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+}
+
+
+.foto__destaque {
+    margin: 2rem 30%;
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+}
+
+.titulo__destaque {
+    font-size: 2.5rem;
+    font-family: var(--font-titulo);
+    padding-bottom: 2rem;
+}
+
+.boas__vindas {
+    font-size: 1.5rem;
+}

@@ -74,10 +74,9 @@
     color: var(--menu-destaque);
 }
 
-.conteudo {
-
+.corpo__pagina {
+    width: 100%;
 }
-
 
 @media screen and (min-width: 760px) {
 
@@ -98,12 +97,11 @@
         top:6vh;
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
+        padding-left: 0.5rem;
     }
 
     .section {
         height: 94vh;        
-
     }
     
 
@@ -118,8 +116,9 @@
 
     .menu__link {
         display: flex;
-        align-items: center;
         padding: 2rem 0 0 1rem;
+        align-items: center;
+
     } 
 
     .menu__link-icon {
