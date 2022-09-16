@@ -3,13 +3,14 @@
     --background: #555555;
     --shadow: #00ff22;
     --shadow-text: #6d6d6d;
-    --color-destaque: #023802;
+    --color-destaque: #ffffff;
 }
 
 
 .container {
     margin: 2rem 1rem;
     font-family: var(--font-texto);
+    width: 100%;
 }
 
 .container__item {
