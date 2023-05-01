@@ -100,8 +100,9 @@
         padding-left: 0.5rem;
     }
 
-    .section {
-        height: 94vh;        
+    .conteudo {
+        height: 95vh;  
+        width: 80vw;      
     }
     
 

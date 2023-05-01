@@ -7,9 +7,20 @@
     src: url(redes.ttf);
 }
 
-p {
-    font-size: 10rem;
+.container__item {
+    font-size: 5rem;
     color: white;
     font-family: var(--font-redessociais);
+    padding: 1rem 0 1rem 0rem;
+    text-align: center;
 }
 
+
+.rodape {
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.text {
+    font-size: 3rem;
+}
