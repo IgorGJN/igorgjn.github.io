@@ -12,4 +12,4 @@ Transformar na minha apresentação e portifólio.
 Link -> [https://igorgjn.github.io/](https://igorgjn.github.io/)
 
 ### 📅 Ultima atualização 
-22 de Agosto de 2024
+25 de Fevereiro de 2025
