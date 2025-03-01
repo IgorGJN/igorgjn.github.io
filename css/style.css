@@ -86,7 +86,8 @@
     } 
 
     .menu {
-        position: relative;
+        position: fixed;
+        height: 100%;
         bottom: auto;
         left: auto;
         width: 10%;
@@ -102,9 +103,14 @@
 
     .conteudo {
         height: 95vh;  
-        width: 80vw;      
+        width: 80vw; 
+        margin-left: 10%;
+        margin-top: 3rem;     
     }
     
+    .cabecalho {
+        position: fixed;
+    }
 
     
 }
@@ -130,6 +136,10 @@
         font-size: 1rem;
         padding-left: 0.5rem;
 
+    }
+
+    .conteudo {
+        margin-left: 18%;
     }
 
 

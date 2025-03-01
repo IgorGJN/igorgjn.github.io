@@ -2,10 +2,6 @@
     margin-bottom: 4rem;
 }
 
-.conteudo {
-    height: max-content;
-}
-
 .dia {
     border: 1px solid gray;
     padding: 1rem;
@@ -16,11 +12,6 @@
 .image {
     width: 50%;
     margin: 1rem 25%;
-}
-
-p {
-    font-size: var(--font-size);
-    margin: 0.5rem 0;
 }
 
 h3 {
@@ -36,3 +27,5 @@ summary {
     list-style: none;
     cursor: pointer;
 }
+
+
