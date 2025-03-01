@@ -7,20 +7,50 @@
     src: url(redes.ttf);
 }
 
-.container__item {
-    font-size: 5rem;
-    color: white;
-    font-family: var(--font-redessociais);
-    padding: 1rem 0 1rem 0rem;
-    text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
 }
 
+.container__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.icon-redes {
+    font-family: var(--font-redessociais);
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.text {
+    font-size: 2rem;
+    padding-left: 1rem;
+    transition: 3s;
+}
 
 .rodape {
     text-align: center;
     padding-top: 40vh;
 }
 
-.text {
-    font-size: 3rem;
+
+
+@media screen and (min-width: 760px) {
+
+    .icon-redes, .text {
+        font-size: 3rem;
+    }
+
+}
+    
+
+@media screen and (min-width: 960px) {
+
+
+
 }

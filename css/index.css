@@ -24,3 +24,46 @@
 .boas__vindas {
     font-size: 1.5rem;
 }
+
+.eye {
+    display: grid;
+}
+
+.image-eye {
+    opacity: 0;
+    transition: 1s;
+}
+
+.image-eye:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+  
+.image-eye, .image-back {
+    grid-area: 1 / 1; /* Faz com que ambas fiquem na mesma posição */
+    width: 50%;
+    height: auto;
+    margin: 2rem 0 0 25%;
+}
+
+@media screen and (min-width: 760px) {
+    .image-eye, .image-back {
+        position: absolute;
+        right: 5vw;
+        top: 5vh;
+        width: 18vw;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+
+    .image-eye, .image-back {
+        position: absolute;
+        right: 5vw;
+        top: 5vh;
+        width: 12vw;
+    }
+
+}
