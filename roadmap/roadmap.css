@@ -1,0 +1,121 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding: 30px 20px;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #00ffff;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Animação de carregamento */
+#loading {
+    margin: 50px;
+    font-size: 20px;
+    color: #00ffff;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Estilização da Tabela */
+.table-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px 0;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+}
+
+thead {
+    background: #00ffff;
+    color: #000;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+tr:nth-child(even) {
+    background: #252525;
+}
+
+tr:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #203a43, #2c5364);
+    color: #ddd;
+    box-shadow: 0px -4px 8px rgba(0, 255, 255, 0.2);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

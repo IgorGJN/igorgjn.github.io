@@ -28,4 +28,6 @@ summary {
     cursor: pointer;
 }
 
-
+.dia p {
+    padding: 0.2rem 0;
+}

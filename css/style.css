@@ -4,6 +4,7 @@
     --background-menu: #203546;
     --menu-destaque: #A4B7DC;
     --menu-font: #EEEEEE;
+    --links: #4A6DA7;
     --font-size: 16px;
     --font-icon: 'icon';
     --font-titulo: 'Silkscreen', cursive;
@@ -76,6 +77,11 @@
 
 .corpo__pagina {
     width: 100%;
+}
+
+.link {
+    color: var(--links);
+    font-weight: 500;
 }
 
 @media screen and (min-width: 760px) {
