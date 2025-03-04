@@ -27,6 +27,7 @@
                         <th>Categoria</th>
                         <th>Tecnologia / Tarefa</th>
                         <th>Detalhes</th>
+                        <th>Desafios</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,7 +35,38 @@
                         <td>Curto Prazo (0-3 meses)</td>
                         <td>Front-End</td>
                         <td>HTML, CSS, JavaScript</td>
-                        <td>Aprender HTML semântico, CSS Grid/Flexbox, manipulação do DOM com JS</td>
+                        <td><details>
+                                <summary>HTML semântico, </summary>
+                                <p>Criar páginas utilizando &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; etc.</p>
+                                <p>Usar corretamente &lt;h1&gt; a &lt;h6&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt; e &lt;figure&gt;.</p>
+                                <p>Acessibilidade: Uso de atributos alt em imagens, aria-label, aria-hidden, etc.</p>
+                            </details>
+                            <details>
+                                <summary>CSS Grid/Flexbox</summary>
+                                <p>Criar layouts com CSS Grid: grid-template-areas, grid-template-columns, grid-template-rows, grid-gap.</p>
+                                <p>Criar layouts com Flexbox: justify-content, align-items, flex-grow, flex-shrink, order.
+                                    Criar páginas responsivas combinando Grid e Flexbox.</p>
+                            </details>
+                            <details>
+                                <summary>Manipulação do DOM com JS</summary>
+                                <p>Selecionar elementos (document.querySelector, getElementById).</p>
+                                <p>Modificar classes e estilos (classList.add/remove/toggle).
+                                </p>
+                                <p>Criar, modificar e remover elementos (createElement, appendChild, remove).
+                                </p>
+                                <p>Manipular eventos (addEventListener, preventDefault).
+                                </p>
+                            </details>
+                        </td>
+                        <td>
+                            <details><summary>HTML Semântico
+                            </summary><p>Um &lt;header&gt; com título e navegação.
+                                Um &lt;main&gt; com uma descrição sobre você.
+                                Uma lista de habilidades com &lt;ul&gt; e links com &lt;a&gt;.
+                                Uma seção de contato com um formulário usando &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt; e &lt;button&gt;.
+                                Objetivo:
+                                Aplicar tags semânticas para estruturar uma página web e garantir acessibilidade básica.</p></details>
+                        </td>
                     </tr>
                     <tr>
                         <td>Curto Prazo (0-3 meses)</td>
@@ -70,3 +102,140 @@
     </footer>
 </body>
 </html>
+
+
+<!-- Curto Prazo (0-3 meses)
+HTML Semântico
+
+CSS: Grid e Flexbox
+
+Manipulação do DOM com JavaScript
+
+Versionamento com Git e GitHub
+Criar repositórios, clonar e configurar .gitignore.
+Realizar commits (git add ., git commit -m "mensagem", git push).
+Criar e mesclar branches (git branch, git checkout, git merge).
+Resolver conflitos de merge.
+Médio Prazo (3-9 meses)
+Back-End: Node.js, Express e Banco de Dados
+Criar um servidor com Express (app.get(), app.post()).
+Trabalhar com middlewares (express.json(), cors, morgan).
+Criar APIs RESTful (CRUD: GET, POST, PUT, DELETE).
+Configurar um banco de dados como MongoDB (Mongoose) ou PostgreSQL (Sequelize).
+Front-End Avançado: React.js
+Criar componentes funcionais e reutilizáveis.
+Utilizar Hooks (useState, useEffect, useContext).
+Gerenciar estado com Redux ou Context API.
+Fazer requisições a APIs (fetch ou axios).
+Criar rotas dinâmicas com React Router.
+Longo Prazo (9-18 meses)
+TypeScript
+Tipar variáveis e funções (string, number, boolean, any, unknown).
+Criar interfaces e types (interface, type).
+Utilizar genéricos (T extends U).
+Configurar um projeto com TypeScript (tsconfig.json).
+Docker
+Criar um Dockerfile e entender suas instruções (FROM, COPY, CMD).
+Construir e rodar containers (docker build, docker run).
+Trabalhar com Docker Compose para orquestração.
+CI/CD (Integração Contínua e Deploy)
+Configurar GitHub Actions para automação.
+Criar pipelines no GitHub Actions (.github/workflows).
+Fazer deploy em plataformas como Vercel, Netlify ou Render.
+Se precisar de um plano ainda mais detalhado, posso criar desafios práticos para cada etapa!
+
+Você disse:
+Faz esses desafios práticos 
+O ChatGPT disse:
+Aqui estão alguns desafios práticos para cada uma das áreas mencionadas no roadmap. Eles vão te ajudar a solidificar seus conhecimentos e ganhar experiência prática.
+
+Curto Prazo (0-3 meses)
+HTML Semântico
+Desafio:
+Crie uma página de "Sobre" usando HTML semântico que inclua:
+
+Um <header> com título e navegação.
+Um <main> com uma descrição sobre você.
+Uma lista de habilidades com <ul> e links com <a>.
+Uma seção de contato com um formulário usando <form>, <input>, <textarea> e <button>.
+Objetivo:
+Aplicar tags semânticas para estruturar uma página web e garantir acessibilidade básica.
+
+CSS: Grid e Flexbox
+Desafio:
+Crie um layout de página com um cabeçalho fixo no topo, uma barra lateral e um conteúdo principal:
+
+A barra lateral deve ter largura fixa.
+O conteúdo principal deve ser responsivo, mudando de uma coluna para duas ou três conforme a tela encolhe.
+Use Flexbox para a barra lateral e o conteúdo, e Grid para o layout geral.
+Objetivo:
+Praticar layouts responsivos utilizando Grid e Flexbox de forma combinada.
+
+Manipulação do DOM com JavaScript
+Desafio:
+Crie uma lista de tarefas simples (To-Do List):
+
+Permita adicionar tarefas através de um campo de texto e um botão.
+Mostre as tarefas na tela.
+Permita excluir uma tarefa clicando nela (remova o item da lista).
+Objetivo:
+Aprender a manipular o DOM com JavaScript para criar interatividade simples.
+
+Versionamento com Git e GitHub
+Desafio:
+
+Crie um repositório no GitHub.
+Faça o commit de cada uma das mudanças feitas em um arquivo HTML ou CSS, criando mensagens de commit descritivas.
+Experimente criar uma branch para modificar o layout da página e depois faça um pull request para a branch principal.
+Objetivo:
+Familiarizar-se com o fluxo básico de versionamento utilizando Git e GitHub.
+
+Médio Prazo (3-9 meses)
+Back-End: Node.js, Express e Banco de Dados
+Desafio:
+Crie uma API simples para um "gerenciador de livros":
+
+A API deve ter rotas para: listar livros, adicionar livros, atualizar livros e excluir livros.
+Use Express para definir as rotas e MongoDB para armazenar os livros.
+Cada livro deve ter um título, autor e ano de publicação.
+Objetivo:
+Praticar a criação de APIs RESTful com Express e a integração com MongoDB.
+
+Front-End Avançado: React.js
+Desafio:
+Crie um contador de cliques usando React:
+
+Crie um componente que tenha um contador que começa em zero.
+Cada vez que o usuário clicar no botão, o contador deve ser incrementado.
+Use o hook useState para gerenciar o estado do contador.
+Objetivo:
+Praticar a criação de componentes e o uso de hooks em React.
+
+Longo Prazo (9-18 meses)
+TypeScript
+Desafio:
+Crie uma função que aceite um array de números e retorne a soma deles:
+
+A função deve ser tipada corretamente com TypeScript.
+Use o tipo number[] para o array e number para o retorno.
+Objetivo:
+Praticar a tipagem de dados com TypeScript e trabalhar com arrays e números.
+
+Docker
+Desafio:
+Crie um container Docker para rodar um simples servidor Express:
+
+Escreva um Dockerfile para configurar a imagem.
+Crie uma imagem Docker e rode o servidor Express dentro do container.
+Exponha a porta corretamente para poder acessar o servidor no navegador.
+Objetivo:
+Familiarizar-se com o uso de Docker para criar e rodar containers.
+
+CI/CD (Integração Contínua e Deploy)
+Desafio:
+Configure um workflow do GitHub Actions para rodar testes sempre que você fizer um push:
+
+O workflow deve rodar uma série de testes no seu código toda vez que você enviar alterações para o repositório.
+Utilize uma plataforma de deploy, como Vercel, para realizar o deploy automático da sua aplicação.
+Objetivo:
+Praticar automação de testes e deploy com CI/CD. -->
