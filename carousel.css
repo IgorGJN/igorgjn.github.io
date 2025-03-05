@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center; /* Centraliza o carrossel no container */
     margin-top: 20px;
+    margin-bottom: 5rem;
 }
 
 /* Carrossel em si */
