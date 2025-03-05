@@ -1,0 +1,86 @@
+body {
+    font-size: 12pt;
+}
+
+.corpo {
+  background-color: blue;
+  margin: 0 0 6rem 0;
+  
+}
+
+.cabecalho {
+  background-color: dimgray;
+  height: 4rem;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 1rem;
+}
+
+.texto-dia {
+  margin: 4.2rem 0 0 0;
+  background-color: red;
+  height: 6rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 0.3rem solid #000;
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.1rem;
+  overflow: scroll;
+}
+
+.flex::-webkit-scrollbar{
+	display:none;
+}
+
+.favoritos {
+  background-color: green;
+  margin-top: 1.5rem;
+}
+
+.favoritos-itens {
+}
+
+.item {
+ 
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+.item{
+  border: 3px solid #000;
+  width: 5rem;
+  height: 7rem;
+}
+
+.certificados {
+  background-color: cadetblue;
+  height: auto;
+}
+
+.novidades {
+  background-color: lightpink;
+  height: auto;
+}
+
+.fixos {
+  background-color: gray;
+  height: auto;
+}
+
+.rodape {
+  background-color: dimgray;
+  height: 5rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

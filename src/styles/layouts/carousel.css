@@ -26,3 +26,7 @@
 .carrossel img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
 }
+
+.carrossel-container::-webkit-scrollbar{
+	display:none;
+}
