@@ -1,0 +1,27 @@
+/* Container do carrossel */
+.carrossel-container {
+    width: 100%;           /* A largura do container será 100% do tamanho disponível */
+    overflow-x: scroll;    /* Permite rolar horizontalmente */
+    display: flex;
+    justify-content: center; /* Centraliza o carrossel no container */
+    margin-top: 20px;
+}
+
+/* Carrossel em si */
+.carrossel {
+    display: flex;        /* Flexbox para colocar as imagens em linha */
+    gap: 10px;            /* Espaçamento entre as imagens */
+}
+
+/* As imagens dentro do carrossel */
+.carrossel img {
+    width: 200px;         /* Define a largura de cada imagem */
+    height: auto;         /* A altura será ajustada automaticamente */
+    object-fit: cover;    /* Ajusta as imagens para cobrir a área definida */
+    border-radius: 8px;   /* Adiciona bordas arredondadas às imagens */
+    transition: transform 0.3s ease; /* Efeito suave de zoom ao passar o mouse */
+}
+
+.carrossel img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
