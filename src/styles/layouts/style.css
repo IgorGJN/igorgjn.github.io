@@ -13,66 +13,17 @@
 
 @font-face {
     font-family: 'icon';
-    src: url(icom.ttf);
+    src: url(../../assets/fonts/icom.ttf);
 }
 
-.corpo {
+/* .corpo {
     background-color: var(--background-color);
     font-size: var(--font-size);
     font-family: var(--font-texto);
     color: var(--menu-font);
 }
 
-.cabecalho {
-    background-color: var(--background-menu);
-    position: sticky;
-    position: -webkit-sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 1px var(--menu-destaque);
-    z-index: 2;
-}
 
-.cabecalho__titulo {
-    font-size: 1.5rem;
-    padding: 12px 16px 12px 32px;
-    font-family: var(--font-titulo);
-}
-
-.menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-menu);
-}
-
-.menu__lateral {
-    display: flex;
-}
-
-
-.menu__link {
-    width: 20%;
-    text-align: center;
-    padding: 0.5rem;
-}
-
-.menu__link-icon {
-    font-family: var(--font-icon);
-    padding: 0.2rem 0 0.6rem 0;
-    font-size: 1.4rem;
-}
-
-.menu__link-text {
-    font-family: var(--font-titulo);
-    font-size: 0.5rem;
-}
-
-.menu__link--ativo {
-    color: var(--menu-destaque);
-}
 
 .corpo__pagina {
     width: 100%;
@@ -85,20 +36,6 @@
 
     } 
 
-    .menu {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        width: 10%;
-    } 
-
-    .menu__lateral {
-        position: sticky;
-        top:6vh;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0.5rem;
-    }
 
     .conteudo {
         height: 95vh;  
@@ -111,26 +48,6 @@
 
 @media screen and (min-width: 960px) {
 
-    .menu {
-        width: 18%;
-    }
-
-    .menu__link {
-        display: flex;
-        padding: 2rem 0 0 1rem;
-        align-items: center;
-
-    } 
-
-    .menu__link-icon {
-        font-size: 1.5rem;
-    }
-
-    .menu__link-text {
-        font-size: 1rem;
-        padding-left: 0.5rem;
-
-    }
 
 
-}
+} */
