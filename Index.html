@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Igor GJN | Projetos</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#020617;
+      color:#fff;
+      min-height:100vh;
+    }
+
+    .background{
+      position:fixed;
+      inset:0;
+      background:
+        radial-gradient(circle at top left,#1d4ed8 0%,transparent 30%),
+        radial-gradient(circle at bottom right,#0f766e 0%,transparent 30%);
+      opacity:.15;
+      z-index:-1;
+    }
+
+    header{
+      padding:80px 24px 40px;
+      max-width:1400px;
+      margin:auto;
+    }
+
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .hero-text h1{
+      font-size:64px;
+      margin-bottom:16px;
+      line-height:1;
+    }
+
+    .hero-text p{
+      color:#94a3b8;
+      font-size:20px;
+      max-width:700px;
+      line-height:1.6;
+    }
+
+    .stats{
+      display:flex;
+      gap:16px;
+      margin-top:30px;
+      flex-wrap:wrap;
+    }
+
+    .stat{
+      background:#0f172a;
+      border:1px solid #1e293b;
+      padding:18px 22px;
+      border-radius:18px;
+      min-width:160px;
+    }
+
+    .stat strong{
+      display:block;
+      font-size:28px;
+      margin-bottom:5px;
+    }
+
+    .stat span{
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    .search-box{
+      margin-top:40px;
+    }
+
+    #search{
+      width:100%;
+      background:#0f172a;
+      border:1px solid #1e293b;
+      color:white;
+      padding:18px 22px;
+      border-radius:18px;
+      outline:none;
+      font-size:16px;
+    }
+
+    main{
+      max-width:1400px;
+      margin:auto;
+      padding:0 24px 80px;
+    }
+
+    .filters{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:40px;
+    }
+
+    .filters button{
+      border:none;
+      background:#0f172a;
+      color:#cbd5e1;
+      padding:12px 18px;
+      border-radius:999px;
+      cursor:pointer;
+      transition:.2s;
+      font-size:14px;
+    }
+
+    .filters button.active,
+    .filters button:hover{
+      background:#2563eb;
+      color:white;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:22px;
+    }
+
+    .card{
+      background:rgba(15,23,42,.85);
+      border:1px solid #1e293b;
+      border-radius:26px;
+      padding:28px;
+      transition:.25s;
+      backdrop-filter:blur(10px);
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      border-color:#2563eb;
+      box-shadow:0 10px 30px rgba(37,99,235,.15);
+    }
+
+    .category{
+      color:#60a5fa;
+      font-size:13px;
+      margin-bottom:12px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+
+    .card h2{
+      font-size:28px;
+      margin-bottom:14px;
+    }
+
+    .card p{
+      color:#94a3b8;
+      line-height:1.7;
+      margin-bottom:24px;
+      min-height:80px;
+    }
+
+    .tech{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:26px;
+    }
+
+    .tech span{
+      background:#1e293b;
+      color:#cbd5e1;
+      padding:7px 12px;
+      border-radius:999px;
+      font-size:12px;
+    }
+
+    .actions{
+      display:flex;
+      gap:14px;
+    }
+
+    .actions a{
+      flex:1;
+      text-align:center;
+      padding:14px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.2s;
+    }
+
+    .demo{
+      background:#2563eb;
+      color:white;
+    }
+
+    .github{
+      background:#1e293b;
+      color:white;
+    }
+
+    .demo:hover{
+      background:#1d4ed8;
+    }
+
+    .github:hover{
+      background:#334155;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      color:#64748b;
+      border-top:1px solid #1e293b;
+      margin-top:60px;
+    }
+
+    @media(max-width:700px){
+
+      .hero-text h1{
+        font-size:44px;
+      }
+
+      .hero-text p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<header>
+
+  <div class="hero">
+
+    <div class="hero-text">
+      <h1>Igor GJN</h1>
+
+      <p>
+        Central de projetos, sistemas web, estudos,
+        ferramentas e aplicações desenvolvidas com HTML,
+        CSS, JavaScript e outras tecnologias.
+      </p>
+
+      <div class="stats">
+
+        <div class="stat">
+          <strong>36</strong>
+          <span>Repositórios</span>
+        </div>
+
+        <div class="stat">
+          <strong>19</strong>
+          <span>Seguidores</span>
+        </div>
+
+        <div class="stat">
+          <strong>2022</strong>
+          <span>Desde</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="search-box">
+    <input
+      type="text"
+      id="search"
+      placeholder="Pesquisar projeto..."
+    >
+  </div>
+
+</header>
+
+<main>
+
+  <div class="filters">
+
+    <button class="active" data-filter="all">Todos</button>
+    <button data-filter="Sistema">Sistemas</button>
+    <button data-filter="CRUD">CRUD</button>
+    <button data-filter="Ferramenta">Ferramentas</button>
+    <button data-filter="Jogo">Jogos</button>
+    <button data-filter="Estudo">Estudos</button>
+    <button data-filter="Site">Sites</button>
+
+  </div>
+
+  <section class="grid" id="projects"></section>
+
+</main>
+
+<footer>
+  © 2026 Igor GJN • GitHub Portfolio
+</footer>
+
+<script>
+
+const projects = [
+
+{
+  name:"ERP",
+  category:"Sistema",
+  description:"Meu primeiro ERP.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/erp/",
+  github:"https://github.com/IgorGJN/erp"
+},
+
+{
+  name:"Quadro",
+  category:"Ferramenta",
+  description:"Projeto JavaScript Quadro.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/quadro/",
+  github:"https://github.com/IgorGJN/quadro"
+},
+
+{
+  name:"Tools",
+  category:"Ferramenta",
+  description:"Coleção de ferramentas.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/tools/",
+  github:"https://github.com/IgorGJN/tools"
+},
+
+{
+  name:"RBM",
+  category:"Sistema",
+  description:"Projeto RBM.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/rbm/",
+  github:"https://github.com/IgorGJN/rbm"
+},
+
+{
+  name:"Pesquisa Bíblica",
+  category:"Ferramenta",
+  description:"App para registros bíblicos.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/pesquisa_biblica/",
+  github:"https://github.com/IgorGJN/pesquisa_biblica"
+},
+
+{
+  name:"Estudo",
+  category:"Estudo",
+  description:"Árvore genealógica e linha do tempo bíblica.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/estudo/",
+  github:"https://github.com/IgorGJN/estudo"
+},
+
+{
+  name:"Horta",
+  category:"Sistema",
+  description:"Controle da Horta.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/horta/",
+  github:"https://github.com/IgorGJN/horta"
+},
+
+{
+  name:"Suporte Empreendedor",
+  category:"Sistema",
+  description:"Homepage do Suporte Empreendedor.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/suporteempreendedor/",
+  github:"https://github.com/IgorGJN/suporteempreendedor"
+},
+
+{
+  name:"PontoE",
+  category:"Sistema",
+  description:"Sistema de ponto eletrônico.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/pontoE/",
+  github:"https://github.com/IgorGJN/pontoE"
+},
+
+{
+  name:"Contabil",
+  category:"Sistema",
+  description:"Projeto contábil.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/Contabil/",
+  github:"https://github.com/IgorGJN/Contabil"
+},
+
+{
+  name:"Contabilidade",
+  category:"Sistema",
+  description:"Sistema de contabilidade.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/Contabilidade/",
+  github:"https://github.com/IgorGJN/Contabilidade"
+},
+
+{
+  name:"Indica",
+  category:"Sistema",
+  description:"Projeto Indica.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/Indica/",
+  github:"https://github.com/IgorGJN/Indica"
+},
+
+{
+  name:"Comentários",
+  category:"CRUD",
+  description:"Lista para ajudar nos comentários.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/comentarios/",
+  github:"https://github.com/IgorGJN/comentarios"
+},
+
+{
+  name:"CE",
+  category:"Site",
+  description:"Projeto CE.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/CE/",
+  github:"https://github.com/IgorGJN/CE"
+},
+
+{
+  name:"Cont198",
+  category:"Ferramenta",
+  description:"Cronômetro.",
+  tech:["CSS"],
+  demo:"https://igorgjn.github.io/Cont198/",
+  github:"https://github.com/IgorGJN/Cont198"
+},
+
+{
+  name:"IN",
+  category:"Site",
+  description:"Linktree da IN Soluções.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/in/",
+  github:"https://github.com/IgorGJN/in"
+},
+
+{
+  name:"Quadro Anúncios",
+  category:"CRUD",
+  description:"Criador de anúncios.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/quadro-anuncios/",
+  github:"https://github.com/IgorGJN/quadro-anuncios"
+},
+
+{
+  name:"Tarefas",
+  category:"CRUD",
+  description:"Lista de tarefas.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/tarefas/",
+  github:"https://github.com/IgorGJN/tarefas"
+},
+
+{
+  name:"CRUD PCD",
+  category:"CRUD",
+  description:"CRUD para informações pessoais.",
+  tech:["CSS"],
+  demo:"https://igorgjn.github.io/crud-pcd/",
+  github:"https://github.com/IgorGJN/crud-pcd"
+},
+
+{
+  name:"EM-T",
+  category:"Estudo",
+  description:"Caminhos para se tornar profissional.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/em-T/",
+  github:"https://github.com/IgorGJN/em-T"
+},
+
+{
+  name:"Python Basics",
+  category:"Estudo",
+  description:"Introdução ao Python.",
+  tech:["Python"],
+  demo:"https://github.com/IgorGJN/Python-Basics",
+  github:"https://github.com/IgorGJN/Python-Basics"
+},
+
+{
+  name:"Pong",
+  category:"Jogo",
+  description:"Clone do jogo Pong.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/game-1-pong/",
+  github:"https://github.com/IgorGJN/game-1-pong"
+},
+
+{
+  name:"Freeway",
+  category:"Jogo",
+  description:"Game Freeway.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/game-2-freeway/",
+  github:"https://github.com/IgorGJN/game-2-freeway"
+},
+
+{
+  name:"7 Days Of Code",
+  category:"Estudo",
+  description:"Desafio Alura.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/7DaysOfCode-LogicaJS/",
+  github:"https://github.com/IgorGJN/7DaysOfCode-LogicaJS"
+},
+
+{
+  name:"Primeira Página Web",
+  category:"Site",
+  description:"Primeira página web.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/primeira-pagina-web/",
+  github:"https://github.com/IgorGJN/primeira-pagina-web"
+},
+
+{
+  name:"Linktree",
+  category:"Site",
+  description:"Projeto árvore de links.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/linktree/",
+  github:"https://github.com/IgorGJN/linktree"
+},
+
+{
+  name:"Simple MIDI",
+  category:"Ferramenta",
+  description:"Projeto MIDI.",
+  tech:["HTML"],
+  demo:"https://igorgjn.github.io/simple-midi/",
+  github:"https://github.com/IgorGJN/simple-midi"
+},
+
+{
+  name:"To-do List",
+  category:"CRUD",
+  description:"Mini projeto JavaScript.",
+  tech:["JavaScript"],
+  demo:"https://igorgjn.github.io/to-do-list/",
+  github:"https://github.com/IgorGJN/to-do-list"
+}
+
+];
+
+const container = document.getElementById("projects");
+const search = document.getElementById("search");
+const buttons = document.querySelectorAll(".filters button");
+
+let currentFilter = "all";
+
+function renderProjects(){
+
+  const text = search.value.toLowerCase();
+
+  container.innerHTML = "";
+
+  projects
+    .filter(project => {
+
+      const matchText =
+        project.name.toLowerCase().includes(text);
+
+      const matchCategory =
+        currentFilter === "all" ||
+        project.category === currentFilter;
+
+      return matchText && matchCategory;
+
+    })
+
+    .forEach(project => {
+
+      const card = document.createElement("div");
+
+      card.className = "card";
+
+      card.innerHTML = `
+        <div class="category">${project.category}</div>
+
+        <h2>${project.name}</h2>
+
+        <p>${project.description}</p>
+
+        <div class="tech">
+          ${project.tech.map(t => `<span>${t}</span>`).join("")}
+        </div>
+
+        <div class="actions">
+
+          <a
+            class="demo"
+            href="${project.demo}"
+            target="_blank"
+          >
+            Abrir
+          </a>
+
+          <a
+            class="github"
+            href="${project.github}"
+            target="_blank"
+          >
+            GitHub
+          </a>
+
+        </div>
+      `;
+
+      container.appendChild(card);
+
+    });
+
+}
+
+search.addEventListener("input", renderProjects);
+
+buttons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    buttons.forEach(btn =>
+      btn.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    currentFilter = button.dataset.filter;
+
+    renderProjects();
+
+  });
+
+});
+
+renderProjects();
+
+</script>
+
+</body>
+</html>
